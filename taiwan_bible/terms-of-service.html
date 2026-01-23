@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用戶協議 - 台語聖經朗讀 | Terms of Service - Taiwanese Bible Audio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .header .app-name {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        .header .update-date {
+            font-size: 14px;
+            opacity: 0.8;
+            margin-top: 10px;
+        }
+        .lang-switch {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #e9ecef;
+        }
+        .lang-btn {
+            padding: 8px 20px;
+            border: 2px solid #667eea;
+            background: white;
+            color: #667eea;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+        .lang-btn:hover, .lang-btn.active {
+            background: #667eea;
+            color: white;
+        }
+        .content {
+            padding: 40px 30px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            color: #667eea;
+            font-size: 20px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .section h3 {
+            color: #495057;
+            font-size: 16px;
+            margin: 15px 0 10px 0;
+        }
+        .section p, .section li {
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .section ul {
+            padding-left: 25px;
+        }
+        .section ul li {
+            margin-bottom: 8px;
+        }
+        .highlight-box {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .warning-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .footer {
+            background: #f8f9fa;
+            padding: 30px;
+            text-align: center;
+            border-top: 1px solid #e9ecef;
+        }
+        .footer p {
+            color: #6c757d;
+            font-size: 14px;
+        }
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .lang-zh, .lang-en {
+            display: none;
+        }
+        .lang-zh.active, .lang-en.active {
+            display: block;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .header {
+                padding: 30px 20px;
+            }
+            .header h1 {
+                font-size: 22px;
+            }
+            .content {
+                padding: 25px 20px;
+            }
+            .section h2 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="lang-zh active">用戶協議</h1>
+            <h1 class="lang-en">Terms of Service</h1>
+            <div class="app-name">台語聖經朗讀 (Taiwanese Bible Audio)</div>
+            <div class="update-date lang-zh active">最後更新日期：2026年1月23日</div>
+            <div class="update-date lang-en">Last Updated: January 23, 2026</div>
+        </div>
+
+        <div class="lang-switch">
+            <button class="lang-btn active" onclick="switchLang('zh')">中文</button>
+            <button class="lang-btn" onclick="switchLang('en')">English</button>
+        </div>
+
+        <!-- 中文版本 -->
+        <div class="content lang-zh active">
+            <div class="section">
+                <h2>1. 協議的接受</h2>
+                <p>歡迎使用「台語聖經朗讀」應用程式（以下簡稱「本應用」）。本應用由 xieru（以下簡稱「我們」或「開發者」）開發和維護。</p>
+                <div class="highlight-box">
+                    <p><strong>重要提示：</strong>當您下載、安裝或使用本應用時，即表示您已閱讀、理解並同意接受本用戶協議（以下簡稱「本協議」）的所有條款和條件。如果您不同意本協議的任何部分，請勿使用本應用。</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>2. 服務描述</h2>
+                <p>本應用提供以下服務：</p>
+                <ul>
+                    <li>台語聖經文本閱讀功能</li>
+                    <li>台語聖經朗讀音頻播放</li>
+                    <li>書籤和閱讀進度記錄</li>
+                    <li>離線閱讀和收聽功能</li>
+                    <li>其他相關的聖經學習功能</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>3. 用戶資格</h2>
+                <p>本應用適合所有年齡段的用戶使用。如果您是未成年人，建議在父母或監護人的指導下使用本應用。</p>
+            </div>
+
+            <div class="section">
+                <h2>4. 用戶行為規範</h2>
+                <p>使用本應用時，您同意：</p>
+                <ul>
+                    <li>遵守所有適用的法律法規</li>
+                    <li>不得嘗試破解、反編譯或以其他方式獲取本應用的源代碼</li>
+                    <li>不得干擾或破壞本應用的正常運行</li>
+                    <li>不得將本應用用於任何非法或未經授權的目的</li>
+                    <li>尊重本應用中的聖經內容及相關資源</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>5. 訂閱服務</h2>
+                <h3>5.1 訂閱內容</h3>
+                <p>本應用可能提供付費訂閱服務，以解鎖額外功能或內容。訂閱詳情將在應用內明確顯示。</p>
+                
+                <h3>5.2 付款與續訂</h3>
+                <ul>
+                    <li>訂閱費用將通過您的 Google Play 帳戶收取</li>
+                    <li>訂閱將在每個計費週期結束時自動續訂，除非您在當前週期結束前至少 24 小時取消</li>
+                    <li>您可以在 Google Play 商店的訂閱設置中管理或取消訂閱</li>
+                </ul>
+
+                <h3>5.3 退款政策</h3>
+                <p>訂閱退款將按照 Google Play 商店的退款政策處理。如有疑問，請聯繫 Google Play 支援或我們的客服。</p>
+            </div>
+
+            <div class="section">
+                <h2>6. 知識產權</h2>
+                <h3>6.1 應用內容</h3>
+                <p>本應用中的所有內容，包括但不限於文本、音頻、圖形、標誌、圖標和軟件，均受相關知識產權法律的保護。</p>
+                
+                <h3>6.2 聖經內容</h3>
+                <p>本應用中使用的聖經文本和音頻內容的版權歸原版權持有者所有。我們已獲得合法授權或使用公共領域的內容。</p>
+
+                <h3>6.3 用戶授權</h3>
+                <p>我們授予您有限的、非獨占的、不可轉讓的許可，僅供您個人非商業性使用本應用。</p>
+            </div>
+
+            <div class="section">
+                <h2>7. 免責聲明</h2>
+                <div class="warning-box">
+                    <p>本應用按「現狀」和「可用」的基礎提供，不提供任何明示或暗示的保證。我們不保證：</p>
+                    <ul>
+                        <li>本應用將始終可用、不間斷或無錯誤</li>
+                        <li>本應用中的內容完全準確無誤</li>
+                        <li>本應用將滿足您的所有需求</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>8. 責任限制</h2>
+                <p>在法律允許的最大範圍內，我們對以下情況不承擔責任：</p>
+                <ul>
+                    <li>因使用或無法使用本應用而導致的任何直接、間接、附帶、特殊或後果性損害</li>
+                    <li>任何數據丟失或損壞</li>
+                    <li>任何第三方的行為或內容</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>9. 隱私保護</h2>
+                <p>我們重視您的隱私。有關我們如何收集、使用和保護您的信息，請參閱我們的<a href="privacy-policy.html">隱私政策</a>。</p>
+            </div>
+
+            <div class="section">
+                <h2>10. 協議修改</h2>
+                <p>我們保留隨時修改本協議的權利。修改後的協議將在本應用內公佈。繼續使用本應用即表示您接受修改後的協議。重大變更時，我們會通過適當方式通知您。</p>
+            </div>
+
+            <div class="section">
+                <h2>11. 終止</h2>
+                <p>我們保留在以下情況下終止或暫停您使用本應用的權利：</p>
+                <ul>
+                    <li>您違反本協議的任何條款</li>
+                    <li>您從事任何欺詐或非法活動</li>
+                    <li>我們決定停止提供本應用服務</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>12. 適用法律</h2>
+                <p>本協議受中華民國（台灣）法律管轄並按其解釋。與本協議相關的任何爭議應提交至有管轄權的法院解決。</p>
+            </div>
+
+            <div class="section">
+                <h2>13. 聯繫我們</h2>
+                <p>如果您對本協議有任何疑問或意見，請通過以下方式聯繫我們：</p>
+                <div class="highlight-box">
+                    <p><strong>開發者：</strong>xieru</p>
+                    <p><strong>電子郵件：</strong>[請添加您的聯繫郵箱]</p>
+                    <p><strong>應用名稱：</strong>台語聖經朗讀</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>14. 其他條款</h2>
+                <ul>
+                    <li><strong>完整協議：</strong>本協議構成您與我們之間關於使用本應用的完整協議。</li>
+                    <li><strong>可分割性：</strong>如果本協議的任何條款被認定為無效或不可執行，其餘條款仍然有效。</li>
+                    <li><strong>棄權：</strong>我們未能執行本協議的任何權利或條款，不構成對該權利或條款的放棄。</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- English Version -->
+        <div class="content lang-en">
+            <div class="section">
+                <h2>1. Acceptance of Terms</h2>
+                <p>Welcome to "Taiwanese Bible Audio" application (hereinafter referred to as "the App"). This App is developed and maintained by xieru (hereinafter referred to as "we", "us", or "developer").</p>
+                <div class="highlight-box">
+                    <p><strong>Important:</strong> By downloading, installing, or using this App, you acknowledge that you have read, understood, and agree to be bound by all terms and conditions of this Terms of Service (hereinafter referred to as "Terms"). If you do not agree to any part of these Terms, please do not use this App.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>2. Service Description</h2>
+                <p>This App provides the following services:</p>
+                <ul>
+                    <li>Taiwanese Bible text reading functionality</li>
+                    <li>Taiwanese Bible audio playback</li>
+                    <li>Bookmarks and reading progress tracking</li>
+                    <li>Offline reading and listening capabilities</li>
+                    <li>Other related Bible study features</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>3. User Eligibility</h2>
+                <p>This App is suitable for users of all ages. If you are a minor, we recommend using this App under the guidance of a parent or guardian.</p>
+            </div>
+
+            <div class="section">
+                <h2>4. User Conduct</h2>
+                <p>When using this App, you agree to:</p>
+                <ul>
+                    <li>Comply with all applicable laws and regulations</li>
+                    <li>Not attempt to crack, decompile, or otherwise obtain the source code of this App</li>
+                    <li>Not interfere with or disrupt the normal operation of this App</li>
+                    <li>Not use this App for any illegal or unauthorized purposes</li>
+                    <li>Respect the Bible content and related resources in this App</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>5. Subscription Services</h2>
+                <h3>5.1 Subscription Content</h3>
+                <p>This App may offer paid subscription services to unlock additional features or content. Subscription details will be clearly displayed within the App.</p>
+                
+                <h3>5.2 Payment and Renewal</h3>
+                <ul>
+                    <li>Subscription fees will be charged through your Google Play account</li>
+                    <li>Subscriptions will automatically renew at the end of each billing period unless you cancel at least 24 hours before the end of the current period</li>
+                    <li>You can manage or cancel your subscription in the Google Play Store subscription settings</li>
+                </ul>
+
+                <h3>5.3 Refund Policy</h3>
+                <p>Subscription refunds will be processed according to Google Play Store's refund policy. For questions, please contact Google Play Support or our customer service.</p>
+            </div>
+
+            <div class="section">
+                <h2>6. Intellectual Property</h2>
+                <h3>6.1 App Content</h3>
+                <p>All content in this App, including but not limited to text, audio, graphics, logos, icons, and software, is protected by applicable intellectual property laws.</p>
+                
+                <h3>6.2 Bible Content</h3>
+                <p>The copyright of Bible text and audio content used in this App belongs to the original copyright holders. We have obtained legal authorization or use public domain content.</p>
+
+                <h3>6.3 User License</h3>
+                <p>We grant you a limited, non-exclusive, non-transferable license to use this App for your personal, non-commercial use only.</p>
+            </div>
+
+            <div class="section">
+                <h2>7. Disclaimer</h2>
+                <div class="warning-box">
+                    <p>This App is provided on an "as is" and "as available" basis without any warranties, express or implied. We do not guarantee that:</p>
+                    <ul>
+                        <li>The App will always be available, uninterrupted, or error-free</li>
+                        <li>The content in the App is completely accurate</li>
+                        <li>The App will meet all your requirements</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>8. Limitation of Liability</h2>
+                <p>To the maximum extent permitted by law, we shall not be liable for:</p>
+                <ul>
+                    <li>Any direct, indirect, incidental, special, or consequential damages arising from the use or inability to use this App</li>
+                    <li>Any data loss or corruption</li>
+                    <li>Any actions or content of third parties</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>9. Privacy Protection</h2>
+                <p>We value your privacy. For information about how we collect, use, and protect your information, please refer to our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+            </div>
+
+            <div class="section">
+                <h2>10. Modifications to Terms</h2>
+                <p>We reserve the right to modify these Terms at any time. Modified Terms will be posted within this App. Continued use of this App indicates your acceptance of the modified Terms. We will notify you of significant changes through appropriate means.</p>
+            </div>
+
+            <div class="section">
+                <h2>11. Termination</h2>
+                <p>We reserve the right to terminate or suspend your access to this App in the following circumstances:</p>
+                <ul>
+                    <li>You violate any provision of these Terms</li>
+                    <li>You engage in any fraudulent or illegal activity</li>
+                    <li>We decide to discontinue providing this App's services</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>12. Governing Law</h2>
+                <p>These Terms shall be governed by and construed in accordance with the laws of the Republic of China (Taiwan). Any disputes related to these Terms shall be submitted to a court of competent jurisdiction for resolution.</p>
+            </div>
+
+            <div class="section">
+                <h2>13. Contact Us</h2>
+                <p>If you have any questions or comments about these Terms, please contact us through:</p>
+                <div class="highlight-box">
+                    <p><strong>Developer:</strong> xieru</p>
+                    <p><strong>Email:</strong> [Please add your contact email]</p>
+                    <p><strong>App Name:</strong> Taiwanese Bible Audio</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>14. Miscellaneous</h2>
+                <ul>
+                    <li><strong>Entire Agreement:</strong> These Terms constitute the entire agreement between you and us regarding the use of this App.</li>
+                    <li><strong>Severability:</strong> If any provision of these Terms is found to be invalid or unenforceable, the remaining provisions shall remain in effect.</li>
+                    <li><strong>No Waiver:</strong> Our failure to enforce any right or provision of these Terms shall not constitute a waiver of such right or provision.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2026 xieru. All rights reserved.</p>
+            <p class="lang-zh active">台語聖經朗讀 (com.xieru.taiwanbible)</p>
+            <p class="lang-en">Taiwanese Bible Audio (com.xieru.taiwanbible)</p>
+            <p style="margin-top: 15px;">
+                <a href="privacy-policy.html" class="lang-zh active">隱私政策</a>
+                <a href="privacy-policy.html" class="lang-en">Privacy Policy</a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            // Update buttons
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // Update content
+            if (lang === 'zh') {
+                document.querySelectorAll('.lang-zh').forEach(el => el.classList.add('active'));
+                document.querySelectorAll('.lang-en').forEach(el => el.classList.remove('active'));
+            } else {
+                document.querySelectorAll('.lang-en').forEach(el => el.classList.add('active'));
+                document.querySelectorAll('.lang-zh').forEach(el => el.classList.remove('active'));
+            }
+        }
+    </script>
+</body>
+</html>
