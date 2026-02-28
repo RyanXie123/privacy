@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户协议 - 温州话圣经朗读 | Terms of Service - Wenzhou Dialect Bible Audio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .header .app-name {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        .header .update-date {
+            font-size: 14px;
+            opacity: 0.8;
+            margin-top: 10px;
+        }
+        .lang-switch {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #e9ecef;
+        }
+        .lang-btn {
+            padding: 8px 20px;
+            border: 2px solid #667eea;
+            background: white;
+            color: #667eea;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+        .lang-btn:hover, .lang-btn.active {
+            background: #667eea;
+            color: white;
+        }
+        .content {
+            padding: 40px 30px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            color: #667eea;
+            font-size: 20px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .section h3 {
+            color: #495057;
+            font-size: 16px;
+            margin: 15px 0 10px 0;
+        }
+        .section p, .section li {
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .section ul {
+            padding-left: 25px;
+        }
+        .section ul li {
+            margin-bottom: 8px;
+        }
+        .highlight-box {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .warning-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .footer {
+            background: #f8f9fa;
+            padding: 30px;
+            text-align: center;
+            border-top: 1px solid #e9ecef;
+        }
+        .footer p {
+            color: #6c757d;
+            font-size: 14px;
+        }
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .lang-zh, .lang-en {
+            display: none;
+        }
+        .lang-zh.active, .lang-en.active {
+            display: block;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .header {
+                padding: 30px 20px;
+            }
+            .header h1 {
+                font-size: 22px;
+            }
+            .content {
+                padding: 25px 20px;
+            }
+            .section h2 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="lang-zh active">用户协议</h1>
+            <h1 class="lang-en">Terms of Service</h1>
+            <div class="app-name">温州话圣经朗读 (Wenzhou Dialect Bible Audio)</div>
+            <div class="update-date lang-zh active">最后更新日期：2026年2月2日</div>
+            <div class="update-date lang-en">Last Updated: February 2, 2026</div>
+        </div>
+
+        <div class="lang-switch">
+            <button class="lang-btn active" onclick="switchLang('zh')">中文</button>
+            <button class="lang-btn" onclick="switchLang('en')">English</button>
+        </div>
+
+        <!-- 中文版本 -->
+        <div class="content lang-zh active">
+            <div class="section">
+                <h2>1. 协议的接受</h2>
+                <p>欢迎使用「温州话圣经朗读」应用程序（以下简称「本应用」）。本应用由 xieru（以下简称「我们」或「开发者」）开发和维护。</p>
+                <div class="highlight-box">
+                    <p><strong>重要提示：</strong>当您下载、安装或使用本应用时，即表示您已阅读、理解并同意接受本用户协议（以下简称「本协议」）的所有条款和条件。如果您不同意本协议的任何部分，请勿使用本应用。</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>2. 服务描述</h2>
+                <p>本应用提供以下服务：</p>
+                <ul>
+                    <li>温州话圣经文本阅读功能</li>
+                    <li>温州话圣经朗读音频播放</li>
+                    <li>书签和阅读进度记录</li>
+                    <li>离线阅读和收听功能</li>
+                    <li>其他相关的圣经学习功能</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>3. 用户资格</h2>
+                <p>本应用适合所有年龄段的用户使用。如果您是未成年人，建议在父母或监护人的指导下使用本应用。</p>
+            </div>
+
+            <div class="section">
+                <h2>4. 用户行为规范</h2>
+                <p>使用本应用时，您同意：</p>
+                <ul>
+                    <li>遵守所有适用的法律法规</li>
+                    <li>不得尝试破解、反编译或以其他方式获取本应用的源代码</li>
+                    <li>不得干扰或破坏本应用的正常运行</li>
+                    <li>不得将本应用用于任何非法或未经授权的目的</li>
+                    <li>尊重本应用中的圣经内容及相关资源</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>5. 订阅服务</h2>
+                <h3>5.1 订阅内容</h3>
+                <p>本应用可能提供付费订阅服务，以解锁额外功能或内容。订阅详情将在应用内明确显示。</p>
+                
+                <h3>5.2 付款与续订</h3>
+                <ul>
+                    <li>订阅费用将通过您的 Google Play 帐户收取</li>
+                    <li>订阅将在每个计费周期结束时自动续订，除非您在当前周期结束前至少 24 小时取消</li>
+                    <li>您可以在 Google Play 商店的订阅设置中管理或取消订阅</li>
+                </ul>
+
+                <h3>5.3 退款政策</h3>
+                <p>订阅退款将按照 Google Play 商店的退款政策处理。如有疑问，请联系 Google Play 支持或我们的客服。</p>
+            </div>
+
+            <div class="section">
+                <h2>6. 知识产权</h2>
+                <h3>6.1 应用内容</h3>
+                <p>本应用中的所有内容，包括但不限于文本、音频、图形、标志、图标和软件，均受相关知识产权法律的保护。</p>
+                
+                <h3>6.2 圣经内容</h3>
+                <p>本应用中使用的圣经文本和音频内容的版权归原版权持有者所有。我们已获得合法授权或使用公共领域的内容。</p>
+
+                <h3>6.3 用户授权</h3>
+                <p>我们授予您有限的、非独占的、不可转让的许可，仅供您个人非商业性使用本应用。</p>
+            </div>
+
+            <div class="section">
+                <h2>7. 免责声明</h2>
+                <div class="warning-box">
+                    <p>本应用按「现状」和「可用」的基础提供，不提供任何明示或暗示的保证。我们不保证：</p>
+                    <ul>
+                        <li>本应用将始终可用、不间断或无错误</li>
+                        <li>本应用中的内容完全准确无误</li>
+                        <li>本应用将满足您的所有需求</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>8. 责任限制</h2>
+                <p>在法律允许的最大范围内，我们对以下情况不承担责任：</p>
+                <ul>
+                    <li>因使用或无法使用本应用而导致的任何直接、间接、附带、特殊或后果性损害</li>
+                    <li>任何数据丢失或损坏</li>
+                    <li>任何第三方的行为或内容</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>9. 隐私保护</h2>
+                <p>我们重视您的隐私。有关我们如何收集、使用和保护您的信息，请参阅我们的<a href="wenzhou-privacy-policy.html">隐私政策</a>。</p>
+            </div>
+
+            <div class="section">
+                <h2>10. 协议修改</h2>
+                <p>我们保留随时修改本协议的权利。修改后的协议将在本应用内公布。继续使用本应用即表示您接受修改后的协议。重大变更时，我们会通过适当方式通知您。</p>
+            </div>
+
+            <div class="section">
+                <h2>11. 终止</h2>
+                <p>我们保留在以下情况下终止或暂停您使用本应用的权利：</p>
+                <ul>
+                    <li>您违反本协议的任何条款</li>
+                    <li>您从事任何欺诈或非法活动</li>
+                    <li>我们决定停止提供本应用服务</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>12. 适用法律</h2>
+                <p>本协议受中华人民共和国法律管辖并按其解释。与本协议相关的任何争议应提交至有管辖权的法院解决。</p>
+            </div>
+
+            <div class="section">
+                <h2>13. 联系我们</h2>
+                <p>如果您对本协议有任何疑问或意见，请通过以下方式联系我们：</p>
+                <div class="highlight-box">
+                    <p><strong>开发者：</strong>xieru</p>
+                    <p><strong>电子邮件：</strong>herrxie@gmail.com</p>
+                    <p><strong>应用名称：</strong>温州话圣经朗读</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>14. 其他条款</h2>
+                <ul>
+                    <li><strong>完整协议：</strong>本协议构成您与我们之间关于使用本应用的完整协议。</li>
+                    <li><strong>可分割性：</strong>如果本协议的任何条款被认定为无效或不可执行，其余条款仍然有效。</li>
+                    <li><strong>弃权：</strong>我们未能执行本协议的任何权利或条款，不构成对该权利或条款的放弃。</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- English Version -->
+        <div class="content lang-en">
+            <div class="section">
+                <h2>1. Acceptance of Terms</h2>
+                <p>Welcome to "Wenzhou Dialect Bible Audio" application (hereinafter referred to as "the App"). This App is developed and maintained by xieru (hereinafter referred to as "we", "us", or "developer").</p>
+                <div class="highlight-box">
+                    <p><strong>Important:</strong> By downloading, installing, or using this App, you acknowledge that you have read, understood, and agree to be bound by all terms and conditions of this Terms of Service (hereinafter referred to as "Terms"). If you do not agree to any part of these Terms, please do not use this App.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>2. Service Description</h2>
+                <p>This App provides the following services:</p>
+                <ul>
+                    <li>Wenzhou dialect Bible text reading functionality</li>
+                    <li>Wenzhou dialect Bible audio playback</li>
+                    <li>Bookmarks and reading progress tracking</li>
+                    <li>Offline reading and listening capabilities</li>
+                    <li>Other related Bible study features</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>3. User Eligibility</h2>
+                <p>This App is suitable for users of all ages. If you are a minor, we recommend using this App under the guidance of a parent or guardian.</p>
+            </div>
+
+            <div class="section">
+                <h2>4. User Conduct</h2>
+                <p>When using this App, you agree to:</p>
+                <ul>
+                    <li>Comply with all applicable laws and regulations</li>
+                    <li>Not attempt to crack, decompile, or otherwise obtain the source code of this App</li>
+                    <li>Not interfere with or disrupt the normal operation of this App</li>
+                    <li>Not use this App for any illegal or unauthorized purposes</li>
+                    <li>Respect the Bible content and related resources in this App</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>5. Subscription Services</h2>
+                <h3>5.1 Subscription Content</h3>
+                <p>This App may offer paid subscription services to unlock additional features or content. Subscription details will be clearly displayed within the App.</p>
+                
+                <h3>5.2 Payment and Renewal</h3>
+                <ul>
+                    <li>Subscription fees will be charged through your Google Play account</li>
+                    <li>Subscriptions will automatically renew at the end of each billing period unless you cancel at least 24 hours before the end of the current period</li>
+                    <li>You can manage or cancel your subscription in the Google Play Store subscription settings</li>
+                </ul>
+
+                <h3>5.3 Refund Policy</h3>
+                <p>Subscription refunds will be processed according to Google Play Store's refund policy. For questions, please contact Google Play Support or our customer service.</p>
+            </div>
+
+            <div class="section">
+                <h2>6. Intellectual Property</h2>
+                <h3>6.1 App Content</h3>
+                <p>All content in this App, including but not limited to text, audio, graphics, logos, icons, and software, is protected by applicable intellectual property laws.</p>
+                
+                <h3>6.2 Bible Content</h3>
+                <p>The copyright of Bible text and audio content used in this App belongs to the original copyright holders. We have obtained legal authorization or use public domain content.</p>
+
+                <h3>6.3 User License</h3>
+                <p>We grant you a limited, non-exclusive, non-transferable license to use this App for your personal, non-commercial use only.</p>
+            </div>
+
+            <div class="section">
+                <h2>7. Disclaimer</h2>
+                <div class="warning-box">
+                    <p>This App is provided on an "as is" and "as available" basis without any warranties, express or implied. We do not guarantee that:</p>
+                    <ul>
+                        <li>The App will always be available, uninterrupted, or error-free</li>
+                        <li>The content in the App is completely accurate</li>
+                        <li>The App will meet all your requirements</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>8. Limitation of Liability</h2>
+                <p>To the maximum extent permitted by law, we shall not be liable for:</p>
+                <ul>
+                    <li>Any direct, indirect, incidental, special, or consequential damages arising from the use or inability to use this App</li>
+                    <li>Any data loss or corruption</li>
+                    <li>Any actions or content of third parties</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>9. Privacy Protection</h2>
+                <p>We value your privacy. For information about how we collect, use, and protect your information, please refer to our <a href="wenzhou-privacy-policy.html">Privacy Policy</a>.</p>
+            </div>
+
+            <div class="section">
+                <h2>10. Modifications to Terms</h2>
+                <p>We reserve the right to modify these Terms at any time. Modified Terms will be posted within this App. Continued use of this App indicates your acceptance of the modified Terms. We will notify you of significant changes through appropriate means.</p>
+            </div>
+
+            <div class="section">
+                <h2>11. Termination</h2>
+                <p>We reserve the right to terminate or suspend your access to this App in the following circumstances:</p>
+                <ul>
+                    <li>You violate any provision of these Terms</li>
+                    <li>You engage in any fraudulent or illegal activity</li>
+                    <li>We decide to discontinue providing this App's services</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>12. Governing Law</h2>
+                <p>These Terms shall be governed by and construed in accordance with the laws of the People's Republic of China. Any disputes related to these Terms shall be submitted to a court of competent jurisdiction for resolution.</p>
+            </div>
+
+            <div class="section">
+                <h2>13. Contact Us</h2>
+                <p>If you have any questions or comments about these Terms, please contact us through:</p>
+                <div class="highlight-box">
+                    <p><strong>Developer:</strong> xieru</p>
+                    <p><strong>Email:</strong> herrxie@gmail.com</p>
+                    <p><strong>App Name:</strong> Wenzhou Dialect Bible Audio</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>14. Miscellaneous</h2>
+                <ul>
+                    <li><strong>Entire Agreement:</strong> These Terms constitute the entire agreement between you and us regarding the use of this App.</li>
+                    <li><strong>Severability:</strong> If any provision of these Terms is found to be invalid or unenforceable, the remaining provisions shall remain in effect.</li>
+                    <li><strong>No Waiver:</strong> Our failure to enforce any right or provision of these Terms shall not constitute a waiver of such right or provision.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2026 xieru. All rights reserved.</p>
+            <p class="lang-zh active">温州话圣经朗读 (com.xieru.bibleWzh)</p>
+            <p class="lang-en">Wenzhou Dialect Bible Audio (com.xieru.bibleWzh)</p>
+            <p style="margin-top: 15px;">
+                <a href="wenzhou-privacy-policy.html" class="lang-zh active">隐私政策</a>
+                <a href="wenzhou-privacy-policy.html" class="lang-en">Privacy Policy</a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            // Update buttons
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // Update content
+            if (lang === 'zh') {
+                document.querySelectorAll('.lang-zh').forEach(el => el.classList.add('active'));
+                document.querySelectorAll('.lang-en').forEach(el => el.classList.remove('active'));
+            } else {
+                document.querySelectorAll('.lang-en').forEach(el => el.classList.add('active'));
+                document.querySelectorAll('.lang-zh').forEach(el => el.classList.remove('active'));
+            }
+        }
+    </script>
+</body>
+</html>
